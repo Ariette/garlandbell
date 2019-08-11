@@ -13,11 +13,11 @@
     <script src="./db/ext/doT.min.js"></script>
     <script src="./db/ext/fastclick.js"></script>
 
-    <script src="gt.bell.min.js"></script>
-    <script src="nodes.min.js"></script>
-    <script src="timers.min.js"></script>
-    <script src="fish.min.js"></script>
-    <script src="locale-ko.min.js"></script>
+    <script src="gt.bell.js"></script>
+    <script src="nodes.js"></script>
+    <script src="timers.js"></script>
+    <script src="fish.js"></script>
+    <script src="locale-ko.js"></script>
 
     <script>
         $(gt.bell.initialize);
@@ -407,9 +407,9 @@
                 <div data-filter=".fish" data-invert="0" class="active filter button short"><img src="./files/icons/job/FSH.png" title="{{=gt.t('Fishing')}}"></div>
 
                 <div class="subheader">{{=gt.t('Types')}}</div>
-                <div data-filter=".unspoiled" data-invert="0" class="active filter button">{{=gt.t('Unspoiled')}}</div>
-                <div data-filter=".ephemeral" data-invert="0" class="active filter button">{{=gt.t('Ephemeral')}}</div>
-                <div data-filter=".legendary" data-invert="0" class="active filter button">{{=gt.t('Legendary')}}</div>
+                <div data-filter=".unspoiled" data-invert="0" class="active filter button center">{{=gt.t('Unspoiled')}}</div>
+                <div data-filter=".ephemeral" data-invert="0" class="active filter button center">{{=gt.t('Ephemeral')}}</div>
+                <div data-filter=".legendary" data-invert="0" class="active filter button center">{{=gt.t('Legendary')}}</div>
 
                 <div class="subheader">{{=gt.t('Tasks')}}</div>
 
@@ -493,22 +493,24 @@
                         <td class="label"><label for="unlimited-columns-setting">{{=gt.t('Unlimited Columns')}}</label></td>
                         <td><input type="checkbox" id="unlimited-columns-setting"></td>
                     </tr>
-                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Use as many columns as possible.')}}</td>
+                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Use as many columns as possible.')}}</td></tr>
                     <tr>
                         <td class="label"><label for="compact-setting">{{=gt.t('Compact')}}</label></td>
                         <td><input type="checkbox" id="compact-setting"></td>
                     </tr>
-                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Compact timer information to the essentials.')}}</td>
+                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Compact timer information to the essentials.')}}</td></tr>
                     <tr>
                         <td class="label"><label for="colorblind-setting">{{=gt.t('Colorblind')}}</label></td>
                         <td><input type="checkbox" id="colorblind-setting"></td>
                     </tr>
-                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Alter active bar colors to better suit colorblind users.')}}</td>
+                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Alter active bar colors to better suit colorblind users.')}}</td></tr>
                     <tr>
                         <td class="label"><label for="servertime-setting">{{=gt.t('Server Time')}}</label></td>
                         <td><input type="checkbox" id="servertime-setting"></td>
                     </tr>
-                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Calibrate time with the server.  Use if your time is wrong.')}}</td>
+                    <tr><td colspan="2" class="deemphasize">{{=gt.t('Calibrate time with the server.  Use if your time is wrong.')}}</td></tr>
+					<tr><td class="label">GarlandTools</td><td><a class="deemphasize" href="http://www.garlandtools.org">http://www.garlandtools.org</a></td></tr>
+					<tr><td class="label">Github</td><td><a class="deemphasize" href="https://github.com/Ariette/garlandbell">https://github.com/Ariette/garlandbell</a></td></tr>
                 </table>
             </div>
 

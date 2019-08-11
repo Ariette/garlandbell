@@ -17,6 +17,10 @@ a {
     color: inherit;
 }
 
+.center {
+	text-align: center;
+}
+
 .right {
     float: right;
 }
@@ -27,6 +31,9 @@ a {
 
 .deemphasize {
     color: #999999;
+}
+a.deemphasize:hover {
+    color: #ddd;
 }
 
 /* Scrollbar */
