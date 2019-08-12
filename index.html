@@ -1,9 +1,33 @@
 ﻿<!DOCTYPE html>
+<!--
+MIT License
+
+Copyright (c) 2018 Chris Faulhaber
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 <html>
 <head>
     <title>갈론드 벨</title>
 
     <meta name="viewport" content="width=device-width,user-scalable=no">
+	<meta name="google-site-verification" content="OCpcUeOs88tNxkazHhp7NoVOnm_Ji4E01JAw9ughJTs" />
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 
@@ -161,7 +185,7 @@
                 <img src="./db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
             {{?}}
             {{?it.folklore}}
-                <img src="./files/icons/item/7128.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
+                <img src="./files/icons/item/26164.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
             {{?}}
             {{?it.fishEyes}}
                 <img src="./files/icons/action/1112.png" class="suffix-icon" title="{{=gt.t('Fish Eyes required')}}">
@@ -244,7 +268,7 @@
             </td>
             <td class="weather">
                 {{?it.def.folklore}}
-                    <img src="./files/icons/item/7128.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
+                    <img src="./files/icons/item/26164.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
                 {{?}}
                 {{?it.def.fishEyes}}
                     <img src="./files/icons/action/1112.png" class="suffix-icon" title="{{=gt.t('Fish Eyes required')}}">
@@ -415,8 +439,8 @@
 
                 <div data-filter=".collectable" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Collectable')}}"><img src="./db/images/Collectable.png"></div>
                 <div data-filter=".reducible" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Reducible')}}"><img src="./db/images/Reduce.png"></div>
-                <div data-filter=".redscrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Red Scrips')}}"><img src="./files/icons/item/7554.png"></div>
-                <div data-filter=".yellowscrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Yellow Scrips')}}"><img src="./files/icons/item/11090.png"></div>
+                <div data-filter=".redscrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Red Scrips')}}"><img src="./files/icons/item/65029.png"></div>
+                <div data-filter=".yellowscrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Yellow Scrips')}}"><img src="./files/icons/item/65043.png"></div>
                 <div data-filter=".hidden" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Hidden')}}"><img src="icons/Check.svg"></div>
 
                 <div class="subheader">{{=gt.t('Other')}}</div>
@@ -435,7 +459,7 @@
                     <img src="./db/images/Setting.png" id="settings-toggle">
                 </span>
 
-                <a href="/">{{=gt.t('Garland Bell')}}</a>
+                <a href="/">갈론드 벨</a>
             </div>
 
             <div id="warnings">
@@ -492,7 +516,6 @@
                     <tr>
                         <td class="label"><label for="unlimited-columns-setting">{{=gt.t('Unlimited Columns')}}</label></td>
                         <td><input type="checkbox" id="unlimited-columns-setting"></td>
-                    </tr>
                     <tr><td colspan="2" class="deemphasize">{{=gt.t('Use as many columns as possible.')}}</td></tr>
                     <tr>
                         <td class="label"><label for="compact-setting">{{=gt.t('Compact')}}</label></td>
@@ -531,8 +554,8 @@
                 </div>
                 <div id="rotations">
                     <div id="rotations-filter" class="radio">
-                        <span class="option button heavensward" data-filter="heavensward">{{=gt.t('Heavensward')}}</span>
-                        <span class="option button stormblood active" data-filter="stormblood">{{=gt.t('Stormblood')}}</span>
+                        <span class="option button heavensward" data-filter="heavensward">창천의 이슈가르드</span>
+                        <span class="option button stormblood active" data-filter="stormblood">홍련의 해방자</span>
                     </div>
 
                     <div class="rotation heavensward">
@@ -785,3 +808,10 @@
 <body>
   Something went wrong!  Please check for Javascript errors and submit any information to the comments page on <a href="http://www.garlandtools.org">www.garlandtools.org</a>.
 </body>
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "bda175824ffce";
+wcs_do();
+</script>
+</html>
