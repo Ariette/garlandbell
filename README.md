@@ -19,7 +19,7 @@
 영어 원문과 올바른 번역문을 함께 제보해주시면 빠른 수정이 가능합니다.
 
 ### 미번역 문자열 일람
-+ 홍련의 해방자 : 알려진 미번역 문자열 없음
++ 홍련의 해방자 : [Untranlsated-4.5.tsv](https://github.com/Ariette/garlandbell/tree/master/Untranslated-4.5.tsv)
 + 칠흑의 반역자 : [Untranlsated-5.0.tsv](https://github.com/Ariette/garlandbell/tree/master/Untranslated-5.0.tsv)
 
 ### 참고
