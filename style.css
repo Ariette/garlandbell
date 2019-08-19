@@ -17,10 +17,6 @@ a {
     color: inherit;
 }
 
-.center {
-	text-align: center;
-}
-
 .right {
     float: right;
 }
@@ -31,9 +27,6 @@ a {
 
 .deemphasize {
     color: #999999;
-}
-a.deemphasize:hover {
-    color: #ddd;
 }
 
 /* Scrollbar */
@@ -1043,3 +1036,16 @@ body.compact .timer .info {
     }
 }
 
+/* Edited */
+.center {
+	text-align: center;
+}
+
+a.deemphasize:hover {
+    color: #ddd;
+}
+
+.block-layout .timer .type-icon.radius {
+    border-radius:100%;
+    margin-right:4px;
+}

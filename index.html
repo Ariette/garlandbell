@@ -27,7 +27,7 @@ SOFTWARE.
     <title>갈론드 벨</title>
 
     <meta name="viewport" content="width=device-width,user-scalable=no">
-	<meta name="google-site-verification" content="OCpcUeOs88tNxkazHhp7NoVOnm_Ji4E01JAw9ughJTs" />
+    <meta name="google-site-verification" content="OCpcUeOs88tNxkazHhp7NoVOnm_Ji4E01JAw9ughJTs" />
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 
@@ -211,6 +211,9 @@ SOFTWARE.
 
         <div class="info deemphasize">
             <img src="{{=it.typeIcon}}" class="type-icon">
+            {{?it.def.hookset}}
+            <img src="./files/icons/action/{{=gt.hookset[it.def.hookset]}}.png" class="type-icon radius" title="{{=gt.t(it.def.hookset)}}">
+            {{?}}
             <div class="zone-time">
                 <span class="zone">{{=gt.t(it.def.zone)}}{{?it.def.coords}} ({{=parseInt(it.def.coords[0])}}, {{=parseInt(it.def.coords[1])}}){{?}}</span> 
                 {{?it.def.during}}
@@ -275,6 +278,9 @@ SOFTWARE.
                 {{?}}
                 {{?it.def.snagging}}
                     <img src="./files/icons/action/1109.png" class="suffix-icon" title="{{=gt.t('Snagging required')}}">
+                {{?}}
+                {{?it.def.hookset}}
+                    <img src="./files/icons/action/{{=gt.hookset[it.def.hookset]}}.png" class="suffix-icon" title="{{=gt.t(it.def.hookset)}}">
                 {{?}}
 
                 {{?it.def.transition}}
@@ -532,8 +538,8 @@ SOFTWARE.
                         <td><input type="checkbox" id="servertime-setting"></td>
                     </tr>
                     <tr><td colspan="2" class="deemphasize">{{=gt.t('Calibrate time with the server.  Use if your time is wrong.')}}</td></tr>
-					<tr><td class="label">GarlandTools</td><td><a class="deemphasize" href="http://www.garlandtools.org">http://www.garlandtools.org</a></td></tr>
-					<tr><td class="label">Github</td><td><a class="deemphasize" href="https://github.com/Ariette/garlandbell">https://github.com/Ariette/garlandbell</a></td></tr>
+                    <tr><td class="label">GarlandTools</td><td><a class="deemphasize" href="http://www.garlandtools.org">http://www.garlandtools.org</a></td></tr>
+                    <tr><td class="label">Github</td><td><a class="deemphasize" href="https://github.com/Ariette/garlandbell">https://github.com/Ariette/garlandbell</a></td></tr>
                 </table>
             </div>
 
