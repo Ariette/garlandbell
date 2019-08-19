@@ -1,1 +1,27 @@
+# System Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dev Files
+files/maps/**/*.png
+time.php
+fish.js
+gt.bell.js
+locale.js
+locale-ko.js
+nodes.js
+timers.js
+index.dev.html
+
+# Trashes
+he.js
+origami.min.js
+files/maps/**/Region*.jpg
+/bell
+/bell_new
+/bell_expand
