@@ -51,7 +51,7 @@ SOFTWARE.
         <table {{?it.main}}id="lmain"{{?}} class="timer-list node-list table-layout {{?!it.main}}user-list{{?}} {{?it.active}}active{{?}} {{?it.hidden}}hidden{{?}}" data-name="{{=it.name}}">
             <thead>
                 <tr class="header">
-                    <td colspan="11"><img class="header-icon" src="./db/images/Clock.svg"> {{=gt.t('timers')}}</td>
+                    <td colspan="11"><img class="header-icon" src="./db/images/Clock.svg"> {{=gt.t(it.name)}}</td>
                 </tr>
                 <tr class="header-labels">
                     <td class="icon"></td>
@@ -71,7 +71,7 @@ SOFTWARE.
 
     <script id="timer-list-block-template" type="text/x-dot-template">
         <div {{?it.main}}id="lmain"{{?}} class="timer-list block-layout {{?!it.main}}user-list{{?}} {{?it.active}}active{{?}} {{?it.hidden}}hidden{{?}}" data-name="{{=it.name}}">
-            <div class="header"><img class="header-icon" src="./db/images/Clock.svg"> {{=gt.t('timers')}}</div>
+            <div class="header"><img class="header-icon" src="./db/images/Clock.svg"> {{=gt.t(it.name)}}</div>
             <div class="node-list"></div>
         </div>
     </script>
