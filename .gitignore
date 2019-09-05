@@ -18,6 +18,11 @@ nodes.js
 timers.js
 index.dev.html
 
+# PWA
+icons/Icon-*.png
+manifest.json
+service-worker.js
+
 # Trashes
 he.js
 origami.min.js
