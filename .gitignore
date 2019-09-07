@@ -17,6 +17,7 @@ locale-ko.js
 nodes.js
 timers.js
 index.dev.html
+.eslintrc.json
 
 # PWA
 icons/Icon-*.png

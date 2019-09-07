@@ -85,7 +85,7 @@ SOFTWARE.
     <script id="node-content-block-template" type="text/x-dot-template">
         <div class="entry-list">
             {{~it.node.items :entry:itemIndex}}
-                <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=entry.id}}">
+                <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=entry.id}}" target="_blank">
                     <img src="./files/icons/item/{{=entry.icon}}.png" class="icon">
                     {{?entry.slot}}<span class="valign deemphasize">[{{=entry.slot}}]</span> {{?}}
                     {{?entry.scrip}}
@@ -132,7 +132,7 @@ SOFTWARE.
                         <img src="./db/images/Collectable.png" class="suffix-icon" title="{{=gt.t('Collectable')}}">
                     {{?}}
 
-                    <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=entry.id}}">{{=gt.t(entry.item)}}</a>
+                    <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=entry.id}}" target="_blank">{{=gt.t(entry.item)}}</a>
 
                     {{?entry.reduce && entry.reduce.item}}
                         <div class="bait">
@@ -171,7 +171,7 @@ SOFTWARE.
     </script>
 
     <script id="fish-entry-block-template" type="text/x-dot-template">
-        <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}">
+        <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}" target="_blank">
             <img src="./files/icons/item/{{=it.icon}}.png" class="icon">
             <span class="valign">{{=gt.t(it.name)}}{{?it.predatorAmount}} [{{=it.predatorAmount}}]{{?}}</span>
 
@@ -248,7 +248,7 @@ SOFTWARE.
                     <img src="./db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
                 {{?}}
 
-                <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}">
+                <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}" target="_blank">
                     {{=gt.t(it.def.name)}}{{?it.def.predatorAmount}} [{{=it.def.predatorAmount}}]{{?}}
                 </a>
 
@@ -285,13 +285,13 @@ SOFTWARE.
 
                 {{?it.def.transition}}
                     {{~it.def.transition :weather:windex}}
-                        <img src="./files/icons/weather/{{=weather}}.png" title="{{=weather}}" class="suffix-icon">
+                        <img src="./files/icons/weather/{{=weather}}.png" title="{{=gt.t(weather)}}" class="suffix-icon">
                     {{~}}
                      <span class="valign">➜</span>
                 {{?}}
                 {{?it.def.weather}}
                     {{~it.def.weather :weather:windex}}
-                        <img src="./files/icons/weather/{{=weather}}.png" title="{{=weather}}" class="suffix-icon">
+                        <img src="./files/icons/weather/{{=weather}}.png" title="{{=gt.t(weather)}}" class="suffix-icon">
                     {{~}}
                 {{?}}
             </td>
