@@ -171,7 +171,7 @@ SOFTWARE.
     </script>
 
     <script id="fish-entry-block-template" type="text/x-dot-template">
-        <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}" target="_blank">
+        <a class="entry" href="{{?it.ff14anglerId}}https://ff14angler.com/index.php?lang=ko&fish={{=it.ff14anglerId}}{{??}}http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}{{?}}" target="_blank">
             <img src="./files/icons/item/{{=it.icon}}.png" class="icon">
             <span class="valign">{{=gt.t(it.name)}}{{?it.predatorAmount}} [{{=it.predatorAmount}}]{{?}}</span>
 
@@ -248,7 +248,7 @@ SOFTWARE.
                     <img src="./db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
                 {{?}}
 
-                <a class="entry" href="http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}" target="_blank">
+                <a class="entry" href="{{?it.def.ff14anglerId}}https://ff14angler.com/index.php?lang=ko&fish={{=it.def.ff14anglerId}}{{??}}http://ff14.inven.co.kr/dataninfo/item/detail.php?code={{=it.id}}{{?}}" target="_blank">
                     {{=gt.t(it.def.name)}}{{?it.def.predatorAmount}} [{{=it.def.predatorAmount}}]{{?}}
                 </a>
 
@@ -427,9 +427,9 @@ SOFTWARE.
                 </div>
 
                 <div class="subheader">{{=gt.t('Patches')}}</div>
-                <div data-filter=".patch-2" data-invert="0" class="active filter button short" title="A Realm Reborn">{{=gt.t('2.0')}}</div>
-                <div data-filter=".patch-3" data-invert="0" class="active filter button short" title="Heavensward">{{=gt.t('3.0')}}</div>
-                <div data-filter=".patch-4" data-invert="0" class="active filter button short" title="Heavensward">{{=gt.t('4.0')}}</div>
+                <div data-filter=".patch-2" data-invert="0" class="active filter button short" title="{{=gt.t('A Realm Reborn')}}">2.0</div>
+                <div data-filter=".patch-3" data-invert="0" class="active filter button short" title="{{=gt.t('Heavensward')}}">3.0</div>
+                <div data-filter=".patch-4" data-invert="0" class="active filter button short" title="{{=gt.t('Stormblood')}}">4.0</div>
 
                 <div class="subheader">{{=gt.t('Classes')}}</div>
                 <div data-filter=".miner" data-invert="0" class="active filter button short"><img src="./files/icons/job/MIN.png" title="{{=gt.t('Mining')}}"></div>
