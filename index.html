@@ -29,6 +29,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <meta name="google-site-verification" content="OCpcUeOs88tNxkazHhp7NoVOnm_Ji4E01JAw9ughJTs" />
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="style.css">
 
     <script src="./db/ext/jquery-3.1.1.min.js"></script>
@@ -465,7 +466,7 @@ SOFTWARE.
                     <img src="./db/images/Setting.png" id="settings-toggle">
                 </span>
 
-                <a href="/">갈론드 벨</a>
+                <a href="./">갈론드 벨</a>
             </div>
 
             <div id="warnings">
@@ -812,12 +813,25 @@ SOFTWARE.
     </script>
 </head>
 <body>
-  Something went wrong!  Please check for Javascript errors and submit any information to the comments page on <a href="http://www.garlandtools.org">www.garlandtools.org</a>.
+    <h2 style="display:hidden !important;">한국 갈론드 벨</h2>
+    <p>자바스크립트를 실행할 수 없습니다! IE 등 오래된 브라우저를 사용 중이시라면 Chrome, Firefox, Opera, Safari 등 최신 브라우저로 접속해주세요.<br>
+        동일한 문제가 계속 발생할 때에는 <a href="https://github.com/Ariette/garlandbell/issues">깃허브 이슈 페이지</a>로 문의하십시오.</p>
 </body>
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
 <script type="text/javascript">
 if(!wcs_add) var wcs_add = {};
 wcs_add["wa"] = "bda175824ffce";
 wcs_do();
+</script>
+<script type="text/javascript">
+if ('serviceWorker' in navigator) {
+    window.addEventListener("load", function() {
+        navigator.serviceWorker
+        .register("./service-worker.min.js")
+        .catch(err => {
+            console.log("Service Worker Register Faild.", err);
+        });
+    });
+  }
 </script>
 </html>

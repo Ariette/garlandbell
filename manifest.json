@@ -1,0 +1,41 @@
+{
+    "name": "GarlandBell for FFXIV KR",
+    "short_name": "GarlandBell",
+    "description": "파이널 판타지 14 한국 서버용 갈론드 벨",
+    "icons": [
+        {
+            "src": "icons/PWA-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/PWA-72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/PWA-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/PWA-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/PWA-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/PWA-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./index.html?launcher=true",
+    "display": "standalone",
+    "theme_color": "#191919",
+    "background_color": "#191919"
+}

@@ -18,12 +18,9 @@ nodes.js
 timers.js
 index.dev.html
 .eslintrc.json
-fish/**/*.*
 
 # PWA
 icons/Icon-*.png
-manifest.json
-service-worker.js
 
 # Trashes
 he.js
