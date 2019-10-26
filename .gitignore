@@ -6,6 +6,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+.eslintrc.json
 
 # Dev Files
 files/maps/**/*.png

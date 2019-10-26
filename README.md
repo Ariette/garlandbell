@@ -1,28 +1,33 @@
-# ÇÑ±¹ °¥·Ğµå º§
-ÆÄÀÌ³Î ÆÇÅ¸Áö 14 ÇÑ±¹ ¼­¹ö¿ë °¥·Ğµå º§
+# í•œêµ­ ê°ˆë¡ ë“œ ë²¨
+íŒŒì´ë„ íŒíƒ€ì§€ 14 í•œêµ­ ì„œë²„ìš© ê°ˆë¡ ë“œ ë²¨
 
-### ÇÁ·ÎÁ§Æ® ¼³¸í
-+ È«·ÃÀÇ ÇØ¹æÀÚ(v4.56) : [https://ariette.github.io/garlandbell/](https://ariette.github.io/garlandbell/)
-+ Ä¥ÈæÀÇ ¹İ¿ªÀÚ(v5.05) : [https://ariette.github.io/garlandbell/5.0/](https://ariette.github.io/garlandbell/5.0/)
+### í”„ë¡œì íŠ¸ ì„¤ëª…
++ í™ë ¨ì˜ í•´ë°©ì(v4.58) : [https://ariette.github.io/garlandbell/](https://ariette.github.io/garlandbell/)
++ ì¹ í‘ì˜ ë°˜ì—­ì(v5.05) : [https://ariette.github.io/garlandbell/5.0/](https://ariette.github.io/garlandbell/5.0/)
 
-º» ÇÁ·ÎÁ§Æ®´Â Clorifex´ÔÀÇ ¿ÀÇÂ ¼Ò½º ÇÁ·ÎÁ§Æ®ÀÎ [GarlandTools](http://www.garlandtools.org/) Áß °¥·Ğµå º§À» [ÆÄÀÌ³Î ÆÇÅ¸Áö 14 ÇÑ±¹ ¼­¹ö](http://www.ff14.co.kr/)¿¡ ¸ÂÃç ¹ø¿ª, ¼öÁ¤ÇÑ °ÍÀÔ´Ï´Ù.
-´ÙÀ½°ú °°Àº ±â´ÉÀ» Áö¿øÇÕ´Ï´Ù.
-+ ÇÑ±¹ ¼­¹ö ÆĞÄ¡ ¹öÀü¿¡ ÃÖÀûÈ­
-+ UI, ¾ÆÀÌÅÛ ÀÌ¸§, Ã¤Áı Áö¿ª µî ÇÑ±ÛÈ­
-+ ÇÑ±¹¾î °Ë»ö °¡´É
-+ ¾ÆÀÌÅÛ DB·Î 'ÆÄÀÌ³ÎÆÇÅ¸Áö14 ÀÎº¥'À» »ç¿ë(È«·Ãver ÇÑÁ¤)
+ë³¸ í”„ë¡œì íŠ¸ëŠ” Clorifexë‹˜ì˜ ì˜¤í”ˆ ì†ŒìŠ¤ í”„ë¡œì íŠ¸ì¸ [GarlandTools](http://www.garlandtools.org/) ì¤‘ ê°ˆë¡ ë“œ ë²¨ì„ [íŒŒì´ë„ íŒíƒ€ì§€ 14 í•œêµ­ ì„œë²„](http://www.ff14.co.kr/)ì— ë§ì¶° ë²ˆì—­, ìˆ˜ì •í•œ ê²ƒì…ë‹ˆë‹¤.
+ë‹¤ìŒê³¼ ê°™ì€ ê¸°ëŠ¥ì„ ì§€ì›í•©ë‹ˆë‹¤.
++ í•œêµ­ ì„œë²„ íŒ¨ì¹˜ ë²„ì „ì— ìµœì í™”
++ UI, ì•„ì´í…œ ì´ë¦„, ì±„ì§‘ ì§€ì—­ ë“± í•œê¸€í™”
++ í•œêµ­ì–´ ê²€ìƒ‰ ê°€ëŠ¥
++ ì±„ì§‘/ì œì‘ ì•„ì´í…œ DBë¡œ 'íŒŒì´ë„íŒíƒ€ì§€14 ì¸ë²¤'ì„ ì‚¬ìš©(í™ë ¨ver í•œì •)
++ ë‚šì‹œ ì•„ì´í…œ DBë¡œ 'ê³ ì–‘ì´ëŠ” ë°°ê³ í”„ë‹¤'ë¥¼ ì‚¬ìš©(í™ë ¨ver í•œì •)
++ ê¸€ë¡œë²Œ ì„œë²„ ê°ˆë¡ ë“œ ë²¨ì˜ ì¼ë¶€ ì˜ëª»ëœ ì •ë³´ ìˆ˜ì •(ë ˆí¼ëŸ°ìŠ¤ë¡œ FFXIV Fish Tracker Appì˜ ì •ë³´ë¥¼ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.)
++ ë¬¼ê³ ê¸° íƒ€ì¼ì— ë‚šì•„ì±„ê¸° ì •ë³´ í‘œì‹œ(ë ˆí¼ëŸ°ìŠ¤ë¡œ FFXIV Fish Tracker Appì˜ ì •ë³´ë¥¼ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.)
++ ê¸°íƒ€ ëª¨ë°”ì¼ ìµœì í™” ì‘ì—…(ì§€ë„ ë°ì´í„° ìš©ëŸ‰ ìµœì í™” ë° PWA ì§€ì› ë“±)
 
-°³¹ßÀÚ´Â º» ÇÁ·ÎÁ§Æ®¸¦ ÀÌ¿ëÇÏ¿© ¹ß»ıÇÑ ¼ÕÇØ¸¦ Ã¥ÀÓÁöÁö ¾ÊÀ¸¸ç, ¹ø¿ª¹®¿¡ ´ëÇÑ ÀúÀÛ±ÇÀº (ÁÖ)¾×ÅäÁî¼ÒÇÁÆ®¿¡ ÀÖ½À´Ï´Ù.
+ê°œë°œìëŠ” ë³¸ í”„ë¡œì íŠ¸ë¥¼ ì´ìš©í•˜ì—¬ ë°œìƒí•œ ì†í•´ë¥¼ ì±…ì„ì§€ì§€ ì•Šìœ¼ë©°, ë²ˆì—­ë¬¸ì— ëŒ€í•œ ì €ì‘ê¶Œì€ (ì£¼)ì•¡í† ì¦ˆì†Œí”„íŠ¸ì— ìˆìŠµë‹ˆë‹¤.
 
-### ¹ö±× ¸®Æ÷Æ®
-¹Ì¹ø¿ª ¹®ÀÚ¿­ ½Å°í ¹× ¹ö±× ¸®Æ÷Æ®´Â [ÀÌ½´Æ®·¡Ä¿](https://github.com/Ariette/garlandbell/issues)¸¦ ÀÌ¿ëÇØÁÖ¼¼¿ä.
-¿µ¾î ¿ø¹®°ú ¿Ã¹Ù¸¥ ¹ø¿ª¹®À» ÇÔ²² Á¦º¸ÇØÁÖ½Ã¸é ºü¸¥ ¼öÁ¤ÀÌ °¡´ÉÇÕ´Ï´Ù.
+### ë²„ê·¸ ë¦¬í¬íŠ¸
+ë¯¸ë²ˆì—­ ë¬¸ìì—´ ì‹ ê³  ë° ë²„ê·¸ ë¦¬í¬íŠ¸ëŠ” [ì´ìŠˆíŠ¸ë˜ì»¤](https://github.com/Ariette/garlandbell/issues)ë¥¼ ì´ìš©í•´ì£¼ì„¸ìš”.
+ì˜ì–´ ì›ë¬¸ê³¼ ì˜¬ë°”ë¥¸ ë²ˆì—­ë¬¸ì„ í•¨ê»˜ ì œë³´í•´ì£¼ì‹œë©´ ë¹ ë¥¸ ìˆ˜ì •ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.
 
-### ¹Ì¹ø¿ª ¹®ÀÚ¿­ ÀÏ¶÷
-+ È«·ÃÀÇ ÇØ¹æÀÚ : [Untranlsated-4.5.tsv](https://github.com/Ariette/garlandbell/tree/master/Untranslated-4.5.tsv)
-+ Ä¥ÈæÀÇ ¹İ¿ªÀÚ : [Untranlsated-5.0.tsv](https://github.com/Ariette/garlandbell/tree/master/Untranslated-5.0.tsv)
+### ë¯¸ë²ˆì—­ ë¬¸ìì—´ ì¼ëŒ
++ í™ë ¨ì˜ í•´ë°©ì : [Untranlsated-4.5.tsv](https://github.com/Ariette/garlandbell/tree/master/Untranslated-4.5.tsv)
++ ì¹ í‘ì˜ ë°˜ì—­ì : [Untranlsated-5.0.tsv](https://github.com/Ariette/garlandbell/tree/master/Untranslated-5.0.tsv)
 
-### Âü°í
-ÀÌ ÇÁ·ÎÁ§Æ®´Â ´ÙÀ½°ú °°Àº ÇÁ·ÎÁ§Æ®ÀÇ µµ¿òÀ¸·Î °³¹ßµÇ¾ú½À´Ï´Ù.
+### ì°¸ê³ 
+ì´ í”„ë¡œì íŠ¸ëŠ” ë‹¤ìŒê³¼ ê°™ì€ í”„ë¡œì íŠ¸ì˜ ë„ì›€ìœ¼ë¡œ ê°œë°œë˜ì—ˆìŠµë‹ˆë‹¤.
 + [GarlandTools by ufx](https://github.com/ufx/GarlandTools)
 + [GarlandBell by arlequins](https://github.com/arlequins/garlandbell)
++ [FFXIV Fish Tracker App by icykoneko](https://github.com/icykoneko/ff14-fish-tracker-app)
