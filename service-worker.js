@@ -1,5 +1,5 @@
-const CACHE = ['v1'];
-const refreshFiles = ['fish.js', 'gt.bell.js', 'locale-ko.js', 'nodes.js', 'timers.js', 'index.dev.html','style.css','manifest.json'];
+const CACHE = ['v2'];
+const refreshFiles = ['fish.min.js', 'gt.bell.min.js', 'locale-ko.min.js', 'nodes.min.js', 'timers.min.js', 'index.html','style.css','manifest.json'];
 
 // On install, cache some resources.
 self.addEventListener('install', function(event) {
@@ -10,7 +10,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(async function () {
       return caches.open(CACHE).then(function (cache) {
         // Open a cache and use `addAll()` with an array of assets to add all of them to the cache. Return a promise resolving when all the assets are added.
-        return cache.addAll(['./index.dev.html']);
+        return cache.addAll(['./index.html']);
     });
   }());
 
