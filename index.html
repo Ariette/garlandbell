@@ -199,6 +199,7 @@ SOFTWARE.
     </script>
 
     <script id="fish-content-block-template" type="text/x-dot-template">
+        {{ let durings, weathers, transitions; if (it.def.duringReal||it.def.duringReal==false) {durings = it.def.duringReal} else {durings = it.def.during}; if (it.def.weatherReal||it.def.weatherReal==false) {weathers = it.def.weatherReal} else {weathers = it.def.weather}; if (it.def.transitionReal||it.def.transitionReal==false) {transitions = it.def.transitionReal} else {transitions = it.def.transition};}}
         <div class="entry-list">
             {{=gt.layout.engine.templates.fishEntry(it.def)}}
             {{?it.def.predator}}
@@ -216,17 +217,17 @@ SOFTWARE.
             {{?}}
             <div class="zone-time">
                 <span class="zone">{{=gt.t(it.def.zone)}}{{?it.def.coords}} ({{=parseInt(it.def.coords[0])}}, {{=parseInt(it.def.coords[1])}}){{?}}</span> 
-                {{?it.def.during}}
-                    @ {{=gt.bell.formatHours(it.def.during.start)}} - {{=gt.bell.formatHours(it.def.during.end)}}
+                {{?durings}}
+                    @ {{=gt.bell.formatHours(durings.start)}} - {{=gt.bell.formatHours(durings.end)}}
                 {{?}}
             </div>
             <div class="type">Lv. {{=it.def.lvl}} {{=gt.util.stars(it.def.stars)}} {{=gt.t(it.def.category)}}</div>
             <div class="condition">
-                {{?it.def.transition}}
-                    {{=gt.t(it.def.transition).join(', ')}} ➜ 
+                {{?transitions}}
+                    {{=gt.t(transitions).join(', ')}} ➜ 
                 {{?}}
-                {{?it.def.weather}}
-                    {{=gt.t(it.def.weather).join(', ')}} 
+                {{?weathers}}
+                    {{=gt.t(weathers).join(', ')}} 
                 {{?}}
             </div>
             <div class="clear"></div>
@@ -234,6 +235,7 @@ SOFTWARE.
     </script>
 
     <script id="fish-content-table-template" type="text/x-dot-template">
+        {{ let durings, weathers, transitions; if (it.def.duringReal||it.def.duringReal==false) {durings = it.def.duringReal} else {durings = it.def.during}; if (it.def.weatherReal||it.def.weatherReal==false) {weathers = it.def.weatherReal} else {weathers = it.def.weather}; if (it.def.transitionReal||it.def.transitionReal==false) {transitions = it.def.transitionReal} else {transitions = it.def.transition};}}
         <tr>
             <td><img src="{{=it.icon}}" class="icon"></td>
             <td>
@@ -265,8 +267,8 @@ SOFTWARE.
             <td>{{=gt.t(it.def.zone)}}</td>
             <td>{{?it.def.coords}}{{=parseInt(it.def.coords[0])}}, {{=parseInt(it.def.coords[1])}}{{?}}</td>
             <td>
-                {{?it.def.during}}
-                    {{=gt.bell.formatHours(it.def.during.start)}} - {{=gt.bell.formatHours(it.def.during.end)}}
+                {{?durings}}
+                    {{=gt.bell.formatHours(durings.start)}} - {{=gt.bell.formatHours(durings.end)}}
                 {{?}}
             </td>
             <td class="weather">
@@ -283,14 +285,14 @@ SOFTWARE.
                     <img src="files/icons/action/{{=gt.hookset[it.def.hookset]}}.png" class="suffix-icon" title="{{=gt.t(it.def.hookset)}}">
                 {{?}}
 
-                {{?it.def.transition}}
-                    {{~it.def.transition :weather:windex}}
+                {{?transitions}}
+                    {{~transitions :weather:windex}}
                         <img src="files/icons/weather/{{=weather}}.png" title="{{=gt.t(weather)}}" class="suffix-icon">
                     {{~}}
                      <span class="valign">➜</span>
                 {{?}}
-                {{?it.def.weather}}
-                    {{~it.def.weather :weather:windex}}
+                {{?weathers}}
+                    {{~weathers :weather:windex}}
                         <img src="files/icons/weather/{{=weather}}.png" title="{{=gt.t(weather)}}" class="suffix-icon">
                     {{~}}
                 {{?}}
