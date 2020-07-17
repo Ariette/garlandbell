@@ -37,11 +37,11 @@ SOFTWARE.
     <script src="./db/ext/doT.min.js"></script>
     <script src="./db/ext/fastclick.js"></script>
 
-    <script src="gt.bell.min.js?v200312"></script>
-    <script src="nodes.min.js??v200312"></script>
-    <script src="timers.min.js?v200312"></script>
-    <script src="fish.min.js?v200312"></script>
-    <script src="locale-ko.min.js?v200312"></script>
+    <script src="gt.bell.min.js?v200718"></script>
+    <script src="nodes.min.js??v200718"></script>
+    <script src="timers.min.js?v200718"></script>
+    <script src="fish.min.js?v200718"></script>
+    <script src="locale-ko.min.js?v200718"></script>
 
     <script>
         $(gt.bell.initialize);
@@ -71,7 +71,7 @@ SOFTWARE.
 
     <script id="timer-list-block-template" type="text/x-dot-template">
         <div {{?it.main}}id="lmain"{{?}} class="timer-list block-layout {{?!it.main}}user-list{{?}} {{?it.active}}active{{?}} {{?it.hidden}}hidden{{?}}" data-name="{{=it.name}}">
-            <div class="header"><img class="header-icon" src="./db/images/Clock.svg"> {{=gt.t(it.name)}}</div>
+            <div class="header"><img class="header-icon" src="./db/images/Clock.svg"> {{=it.name}}</div>
             <div class="node-list"></div>
         </div>
     </script>
@@ -86,10 +86,10 @@ SOFTWARE.
         <div class="entry-list">
             {{~it.node.items :entry:itemIndex}}
                 <a class="entry" href="https://anyder.now.sh/item/{{=entry.id}}" target="_blank">
-                    <img src="files/icons/item/{{=entry.icon}}.png" class="icon">
+                    <img src="files/icons/item/t/{{=entry.icon}}.png" class="icon">
                     {{?entry.slot}}<span class="valign deemphasize">[{{=entry.slot}}]</span> {{?}}
                     {{?entry.scrip}}
-                        <img src="files/icons/item/{{=gt.scrips[entry.scrip]}}.png" class="suffix-icon" title="{{=gt.t(entry.scrip)}}">
+                        <img src="files/icons/item/t/{{=gt.scrips[entry.scrip]}}.png" class="suffix-icon" title="{{=gt.t(entry.scrip)}}">
                     {{??entry.reduce}}
                         <img src="db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
                     {{??entry.collectable}}
@@ -100,7 +100,7 @@ SOFTWARE.
 
                 {{?entry.reduce && entry.reduce.item}}
                     <div class="bait">
-                        <img src="files/icons/item/{{=entry.reduce.icon}}.png" class="icon" title="{{=gt.t(entry.reduce.item)}}, 5단계 +">
+                        <img src="files/icons/item/t/{{=entry.reduce.icon}}.png" class="icon" title="{{=gt.t(entry.reduce.item)}}, 5단계 +">
                     </div>
                 {{?}}
             {{~}}
@@ -120,12 +120,12 @@ SOFTWARE.
     <script id="node-content-table-template" type="text/x-dot-template">
         {{~it.node.items :entry:itemIndex}}
             <tr>
-                <td><img src="files/icons/item/{{=entry.icon}}.png" class="icon"></td>
+                <td><img src="files/icons/item/t/{{=entry.icon}}.png" class="icon"></td>
                 <td>
                     {{?entry.slot}}<span class="deemphasize slot">[{{=entry.slot}}]</span> {{?}}
                     {{?it.hidden}}<img src="icons/Check.svg" class="suffix-icon">{{?}}
                     {{?entry.scrip}}
-                        <img src="files/icons/item/{{=gt.scrips[entry.scrip]}}.png" class="suffix-icon" title="{{=gt.t(entry.scrip)}}">
+                        <img src="files/icons/item/t/{{=gt.scrips[entry.scrip]}}.png" class="suffix-icon" title="{{=gt.t(entry.scrip)}}">
                     {{??entry.reduce}}
                         <img src="db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
                     {{??entry.collectable}}
@@ -136,13 +136,13 @@ SOFTWARE.
 
                     {{?entry.reduce && entry.reduce.item}}
                         <div class="bait">
-                            <img src="files/icons/item/{{=entry.reduce.icon}}.png" class="icon" title="{{=entry.reduce.item}}, Purity 5+">
+                            <img src="files/icons/item/t/{{=entry.reduce.icon}}.png" class="icon" title="{{=gt.t(entry.reduce.item)}}, 5단계 +">
                         </div>
                     {{?}}
                 </td>
                 <td class="countdown time-text">{{=it.progress.countdown}}</td>
                 <td class="spawn-time">{{=it.progress.time}}</td>
-                <td>{{=gt.t(it.title)}}</td>
+                <td>{{=it.title}}</td>
                 <td>{{=gt.t(it.node.zone)}}</td>
                 <td>{{?it.node.coords}}{{=it.node.coords[0]}}, {{=it.node.coords[1]}}{{?}}</td>
                 <td>{{=it.timeText}}</td>
@@ -164,7 +164,7 @@ SOFTWARE.
                 {{??token.arrow}}
                     <span class="valign">➜</span> 
                 {{??}}
-                    <img src="files/icons/item/{{=token.icon}}.png" class="icon" title="{{=gt.t(token.name)}}{{?token.mooch}} ({{=gt.t('mooch')}}){{?}}">
+                    <img src="files/icons/item/t/{{=token.icon}}.png" class="icon" title="{{=token.name}}{{?token.mooch}} ({{=gt.t('mooch')}}){{?}}">
                 {{?}}
             {{~}}
         </div>
@@ -172,20 +172,20 @@ SOFTWARE.
 
     <script id="fish-entry-block-template" type="text/x-dot-template">
         <a class="entry" href="{{?it.ff14anglerId}}https://ff14angler.com/index.php?lang=ko&fish={{=it.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
-            <img src="files/icons/item/{{=it.icon}}.png" class="icon">
-            <span class="valign">{{=gt.t(it.name)}}{{?it.predatorAmount}} [{{=it.predatorAmount}}]{{?}}</span>
+            <img src="files/icons/item/t/{{=it.icon}}.png" class="icon">
+            <span class="valign">{{=it.name}}{{?it.predatorAmount}} [{{=it.predatorAmount}}]{{?}}</span>
 
             {{?it.collectable}}
                 <img src="db/images/Collectable.png" class="suffix-icon" title="{{=gt.t('Collectable')}}">
             {{?}}
             {{?it.scrip}}
-                <img src="files/icons/item/{{=gt.scrips[it.scrip]}}.png" class="suffix-icon" title="{{=gt.t(it.scrip)}}">
+                <img src="files/icons/item/t/{{=gt.scrips[it.scrip]}}.png" class="suffix-icon" title="{{=gt.t(it.scrip)}}">
             {{?}}
             {{?it.reduce}}
                 <img src="db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
             {{?}}
             {{?it.folklore}}
-                <img src="files/icons/item/26164.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
+                <img src="files/icons/item/t/26164.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
             {{?}}
             {{?it.fishEyes}}
                 <img src="files/icons/action/1112.png" class="suffix-icon" title="{{=gt.t('Fish Eyes required')}}">
@@ -244,14 +244,14 @@ SOFTWARE.
                     <img src="db/images/Collectable.png" class="suffix-icon" title="{{=gt.t('Collectable')}}">
                 {{?}}
                 {{?it.def.scrip}}
-                    <img src="files/icons/item/{{=gt.scrips[it.def.scrip]}}.png" class="suffix-icon" title="{{=gt.t(it.def.scrip)}}">
+                    <img src="files/icons/item/t/{{=gt.scrips[it.def.scrip]}}.png" class="suffix-icon" title="{{=gt.t(it.def.scrip)}}">
                 {{?}}
                 {{?it.def.reduce}}
                     <img src="db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
                 {{?}}
 
                 <a class="entry" href="{{?it.def.ff14anglerId}}https://ff14angler.com/index.php?lang=ko&fish={{=it.def.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
-                    {{=gt.t(it.def.name)}}{{?it.def.predatorAmount}} [{{=it.def.predatorAmount}}]{{?}}
+                    {{=it.def.name}}{{?it.def.predatorAmount}} [{{=it.def.predatorAmount}}]{{?}}
                 </a>
 
                 {{=gt.layout.templates.fishBait(it.def)}}
@@ -263,7 +263,7 @@ SOFTWARE.
                 <td></td>
                 <td></td>
             {{?}}
-            <td>{{=gt.t(it.title)}}</td>
+            <td>{{=it.title}}</td>
             <td>{{=gt.t(it.def.zone)}}</td>
             <td>{{?it.def.coords}}{{=parseInt(it.def.coords[0])}}, {{=parseInt(it.def.coords[1])}}{{?}}</td>
             <td>
@@ -273,7 +273,7 @@ SOFTWARE.
             </td>
             <td class="weather">
                 {{?it.def.folklore}}
-                    <img src="files/icons/item/26164.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
+                    <img src="files/icons/item/t/26164.png" class="suffix-icon" title="{{=gt.t('Tome of Ichthyological Folklore')}}">
                 {{?}}
                 {{?it.def.fishEyes}}
                     <img src="files/icons/action/1112.png" class="suffix-icon" title="{{=gt.t('Fish Eyes required')}}">
@@ -366,7 +366,7 @@ SOFTWARE.
         <div class="entry-list">
             <span class="entry">
                 <img src="{{=it.icon}}" class="icon">
-                <span class="valign">{{=gt.t(it.def.name)}}</span>
+                <span class="valign">{{=it.def.name}}</span>
             </span>
 
             {{?it.def.fish}}
@@ -387,11 +387,11 @@ SOFTWARE.
             <td class="icon"><img src="{{=it.icon}}" class="icon"></td>
             <td>
                 {{?it.hidden}}<img src="icons/Check.svg" class="suffix-icon">{{?}}
-                {{=gt.t(it.def.name)}}
+                {{=it.def.name}}
             </td>
             <td class="countdown time-text">{{=it.progress.countdown}}</td>
             <td class="spawn-time">{{=it.progress.time}}</td>
-            <td>{{=gt.t(it.title)}}</td>
+            <td>{{=it.title}}</td>
             <td></td>
             <td></td>
             <td colspan="2">{{=gt.t(it.def.conditions)}}</td>
@@ -447,8 +447,8 @@ SOFTWARE.
                 <div class="subheader">{{=gt.t('Tasks')}}</div>
 
                 <div data-filter=".reducible" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Reducible')}}"><img src="db/images/Reduce.png"></div>
-                <div data-filter=".whitescrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('White Scrips')}}"><img src="files/icons/item/65069.png"></div>
-                <div data-filter=".yellowscrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Yellow Scrips')}}"><img src="files/icons/item/65043.png"></div>
+                <div data-filter=".whitescrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('White Scrips')}}"><img src="files/icons/item/t/65069.png"></div>
+                <div data-filter=".yellowscrips" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Yellow Scrips')}}"><img src="files/icons/item/t/65043.png"></div>
                 <div data-filter=".hidden" data-invert="1" data-exclusive="task" class="filter button short" title="{{=gt.t('Hidden')}}"><img src="icons/Check.svg"></div>
 
                 <div class="subheader">{{=gt.t('Other')}}</div>
@@ -843,6 +843,6 @@ if ('serviceWorker' in navigator) {
 <script type="text/javascript">
 if(!wcs_add) var wcs_add = {};
 wcs_add["wa"] = "bda4221643756";
-wcs_do();
+if (gt.bell.isLive) wcs_do();
 </script>
 </html>

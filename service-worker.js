@@ -1,4 +1,4 @@
-const CACHE = ['v2'];
+const CACHE = ['v3'];
 const refreshFiles = ['fish.min.js', 'gt.bell.min.js', 'locale-ko.min.js', 'nodes.min.js', 'timers.min.js', 'index.html','style.css','manifest.json'];
 
 // On install, cache some resources.
