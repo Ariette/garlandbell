@@ -28,8 +28,8 @@ SOFTWARE.
 
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json?v200718" />
+    <link rel="stylesheet" href="style.css?v200718">
 
     <script src="./db/ext/jquery-3.1.1.min.js"></script>
     <script src="./db/ext/underscore-1.8.3.min.js"></script>
@@ -71,7 +71,7 @@ SOFTWARE.
 
     <script id="timer-list-block-template" type="text/x-dot-template">
         <div {{?it.main}}id="lmain"{{?}} class="timer-list block-layout {{?!it.main}}user-list{{?}} {{?it.active}}active{{?}} {{?it.hidden}}hidden{{?}}" data-name="{{=it.name}}">
-            <div class="header"><img class="header-icon" src="./db/images/Clock.svg"> {{=it.name}}</div>
+            <div class="header"><img class="header-icon" src="./db/images/Clock.svg"> {{=gt.t(it.name)}}</div>
             <div class="node-list"></div>
         </div>
     </script>
@@ -157,21 +157,27 @@ SOFTWARE.
     </script>
 
     <script id="fish-bait-template" type="text/x-dot-template">
-        <div class="bait">
+        <div style="position:absolute; margin-top:-32px; right:4px;">
+        <div class="bait{{?it.tug||it.hookset}} token{{?}}">
             {{~it.baitTokens :token:index}}
                 {{?token.comma}}
                     <span class="comma">, </span>
                 {{??token.arrow}}
                     <span class="valign">➜</span> 
                 {{??}}
-                    <img src="files/icons/item/t/{{=token.icon}}.png" class="icon" title="{{=token.name}}{{?token.mooch}} ({{=gt.t('mooch')}}){{?}}">
+                    {{?token.hookset}}<img src="files/icons/action/{{=gt.hookset[token.hookset]}}.png" class="type-icon radius hookset" title="{{=gt.t(token.hookset)}}">{{?}}
+                    {{?token.tug}}<i class="type-icon radius {{=token.tug}} tug" title="{{=gt.t(token.tug)}}">{{=gt.util.tug(token.tug)}}</i>{{?}}
+                    <img src="files/icons/item/t/{{=token.icon}}.png" class="icon{{?it.baitTokens[index+2] && (it.baitTokens[index+2].hookset||it.baitTokens[index+2].tug)}} token{{?}}" title="{{=token.name}}{{?token.mooch}} ({{=gt.t('mooch')}}){{?}}">
                 {{?}}
             {{~}}
+            {{?it.hookset}}<img src="files/icons/action/{{=gt.hookset[it.hookset]}}.png" class="type-icon radius hookset" title="{{=gt.t(it.hookset)}}" style="margin-left:3px">{{?}}
+            {{?it.tug}}<i class="type-icon radius {{=it.tug}} tug" title="{{=gt.t(it.tug)}}" style="margin-left:3px">{{=gt.util.tug(it.tug)}}</i>{{?}}
+        </div>
         </div>
     </script>
 
     <script id="fish-entry-block-template" type="text/x-dot-template">
-        <a class="entry" href="{{?it.ff14anglerId}}https://ff14angler.com/index.php?lang=ko&fish={{=it.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
+        <a class="entry" href="{{?it.ff14anglerId}}https://ko.ff14angler.com/index.php?fish={{=it.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
             <img src="files/icons/item/t/{{=it.icon}}.png" class="icon">
             <span class="valign">{{=it.name}}{{?it.predatorAmount}} [{{=it.predatorAmount}}]{{?}}</span>
 
@@ -212,9 +218,6 @@ SOFTWARE.
 
         <div class="info deemphasize">
             <img src="{{=it.typeIcon}}" class="type-icon">
-            {{?it.def.hookset}}
-            <img src="files/icons/action/{{=gt.hookset[it.def.hookset]}}.png" class="type-icon radius" title="{{=gt.t(it.def.hookset)}}">
-            {{?}}
             <div class="zone-time">
                 <span class="zone">{{=gt.t(it.def.zone)}}{{?it.def.coords}} ({{=parseInt(it.def.coords[0])}}, {{=parseInt(it.def.coords[1])}}){{?}}</span> 
                 {{?durings}}
@@ -250,7 +253,7 @@ SOFTWARE.
                     <img src="db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
                 {{?}}
 
-                <a class="entry" href="{{?it.def.ff14anglerId}}https://ff14angler.com/index.php?lang=ko&fish={{=it.def.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
+                <a class="entry" href="{{?it.def.ff14anglerId}}https://ko.ff14angler.com/index.php?fish={{=it.def.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
                     {{=it.def.name}}{{?it.def.predatorAmount}} [{{=it.def.predatorAmount}}]{{?}}
                 </a>
 
@@ -280,9 +283,6 @@ SOFTWARE.
                 {{?}}
                 {{?it.def.snagging}}
                     <img src="files/icons/action/1109.png" class="suffix-icon" title="{{=gt.t('Snagging required')}}">
-                {{?}}
-                {{?it.def.hookset}}
-                    <img src="files/icons/action/{{=gt.hookset[it.def.hookset]}}.png" class="suffix-icon" title="{{=gt.t(it.def.hookset)}}">
                 {{?}}
 
                 {{?transitions}}

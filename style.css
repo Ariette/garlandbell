@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-color: black;
     text-shadow: 1px 1px 0px #222;  
     color: #ddd;
@@ -303,7 +303,6 @@ tr.header-labels {
 .table-layout #timer-container .timer .icon {
     width: 28px;
     height: 28px;
-    margin-right: 3px;
 }
 
 .table-layout #timer-container .timer .suffix-icon {
@@ -509,6 +508,7 @@ body.colorblind .block-layout .timer.active .progress-container .progress {
 .block-layout .timer .bait {
     float: right;
     margin-bottom: 2px;
+    position: relative;
 }
 
 .block-layout .timer a.external-link {
@@ -1045,7 +1045,40 @@ a.deemphasize:hover {
     color: #ddd;
 }
 
-.block-layout .timer .type-icon.radius {
-    border-radius:100%;
-    margin-right:4px;
+.token {
+    margin-right:14px !important;
+}
+
+.timer .type-icon.radius {
+    float:none;
+    text-align: center;
+    color:#fff;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0 0 0 #fff;
+    cursor: default;
+    width:13px;
+    height:13px;
+    line-height: 13px;
+    font-size: 10px;
+    margin:0 0 0 -32px;
+    padding:0;
+    border-radius:50% 50% 20% 20%;
+}
+.timer .type-icon.radius.hookset {
+    position: absolute;
+    top:0;
+}
+.timer .type-icon.radius.tug {
+    position: absolute;
+    top:15px;
+}
+.timer .type-icon.radius.light {
+    background-color: rgb(88, 171, 255);
+}
+.timer .type-icon.radius.medium {
+    background-color: darkseagreen;
+}
+.timer .type-icon.radius.heavy {
+    background-color: rgb(255, 129, 129);
 }
