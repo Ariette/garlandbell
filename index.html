@@ -85,7 +85,7 @@ SOFTWARE.
     <script id="node-content-block-template" type="text/x-dot-template">
         <div class="entry-list">
             {{~it.node.items :entry:itemIndex}}
-                <a class="entry" href="https://anyder.now.sh/item/{{=entry.id}}" target="_blank">
+                <a class="entry" href="https://anyder.vercel.app/item/{{=entry.id}}" target="_blank">
                     <img src="files/icons/item/t/{{=entry.icon}}.png" class="icon">
                     {{?entry.slot}}<span class="valign deemphasize">[{{=entry.slot}}]</span> {{?}}
                     {{?entry.scrip}}
@@ -132,7 +132,7 @@ SOFTWARE.
                         <img src="db/images/Collectable.png" class="suffix-icon" title="{{=gt.t('Collectable')}}">
                     {{?}}
 
-                    <a class="entry" href="https://anyder.now.sh/item/{{=entry.id}}" target="_blank">{{=gt.t(entry.item)}}</a>
+                    <a class="entry" href="https://anyder.vercel.app/item/{{=entry.id}}" target="_blank">{{=gt.t(entry.item)}}</a>
 
                     {{?entry.reduce && entry.reduce.item}}
                         <div class="bait">
@@ -177,7 +177,7 @@ SOFTWARE.
     </script>
 
     <script id="fish-entry-block-template" type="text/x-dot-template">
-        <a class="entry" href="{{?it.ff14anglerId}}https://ko.ff14angler.com/index.php?fish={{=it.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
+        <a class="entry" href="{{?it.ff14anglerId}}https://ko.ff14angler.com/index.php?fish={{=it.ff14anglerId}}{{??}}https://anyder.vercel.app/item/{{=it.id}}{{?}}" target="_blank">
             <img src="files/icons/item/t/{{=it.icon}}.png" class="icon">
             <span class="valign">{{=it.name}}{{?it.predatorAmount}} [{{=it.predatorAmount}}]{{?}}</span>
 
@@ -253,7 +253,7 @@ SOFTWARE.
                     <img src="db/images/Reduce.png" class="suffix-icon" title="{{=gt.t('Aetherial Reduction possible')}}">
                 {{?}}
 
-                <a class="entry" href="{{?it.def.ff14anglerId}}https://ko.ff14angler.com/index.php?fish={{=it.def.ff14anglerId}}{{??}}https://anyder.now.sh/item/{{=it.id}}{{?}}" target="_blank">
+                <a class="entry" href="{{?it.def.ff14anglerId}}https://ko.ff14angler.com/index.php?fish={{=it.def.ff14anglerId}}{{??}}https://anyder.vercel.app/item/{{=it.id}}{{?}}" target="_blank">
                     {{=it.def.name}}{{?it.def.predatorAmount}} [{{=it.def.predatorAmount}}]{{?}}
                 </a>
 
